@@ -1,17 +1,29 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './App.css'; // Import the CSS file
+import LeftArrow from './assets/left-arrow.svg';
+import RightArrow from './assets/right-arrow.svg';
+import Img1 from './assets/img1.png';
+import Img2 from './assets/img2.png';
+import Img3 from './assets/img3.png';
+import Img4 from './assets/img4.png';
+import Img5 from './assets/img5.png';
+import Img6 from './assets/img6.png';
+import Img7 from './assets/img7.png';
+import Img8 from './assets/img8.png';
+import Img9 from './assets/img9.png';
+import Img10 from './assets/img10.png';
 
 const images = [
-  "https://auscryptocon.com/wp-content/uploads/2025/05/Frame-325.png",
-  "https://auscryptocon.com/wp-content/uploads/2025/05/Frame-334.png",
-  "https://auscryptocon.com/wp-content/uploads/2025/05/Frame-336.png",
-  "https://auscryptocon.com/wp-content/uploads/2025/05/Frame-337-1.png",
-  "https://wpstaq-ap-southeast-2-media.s3.amazonaws.com/auscryptocon/wp-content/uploads/media/2025/05/Frame-338-1.png",
-  "https://auscryptocon.com/wp-content/uploads/media/2025/05/Frame-339-1.png",
-  "https://wpstaq-ap-southeast-2-media.s3.amazonaws.com/auscryptocon/wp-content/uploads/media/2025/05/Frame-342.png",
-  "https://wpstaq-ap-southeast-2-media.s3.amazonaws.com/auscryptocon/wp-content/uploads/media/2025/05/Frame-341.png",
-  "https://auscryptocon.com/wp-content/uploads/media/2025/05/Frame-343.png",
-  "https://wpstaq-ap-southeast-2-media.s3.amazonaws.com/auscryptocon/wp-content/uploads/media/2025/05/Frame-340.png"
+  Img1,
+  Img2,
+  Img3,
+  Img4,
+  Img5,
+  Img6,
+  Img7,
+  Img8,
+  Img9,
+  Img10
 ];
 
 function App() {
@@ -122,15 +134,18 @@ function App() {
         ))}
       </div>
       {/* Navigation Buttons */}
-      <div className="carousel-navigation">
-        <button onClick={prevCard}>
-          Previous
-        </button>
-        <button onClick={nextCard}>
-          Next
-        </button>
-      </div>
-    </div>
+            <div className="carousel-navigation">
+            <button className="nav-button" onClick={prevCard}>
+              <img src={LeftArrow} alt="Previous" />
+            </button>
+
+
+            <button className="nav-button" onClick={nextCard}>
+              <img src={RightArrow} alt="Next" />
+            </button>
+          </div>
+
+                      </div>
   );
 }
 

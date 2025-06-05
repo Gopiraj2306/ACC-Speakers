@@ -5,6 +5,7 @@
   padding: 0;
   overflow-x: auto;
   width: 100%;
+  background-color: #fff;
 }
 
 .card-carousel {
@@ -57,6 +58,52 @@
 .card-carousel::-webkit-scrollbar {
   display: none; /* Hide scrollbar for a cleaner look */
 }
+.carousel-navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Circular arrow buttons */
+.nav-button {
+  background: transparent;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button:hover {
+  border-color: #ffffff;
+  color: #000;
+}
+
+/* Dots styling */
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #d8d8d8;
+}
+
 
 /* ------------------------------------------- */
 /* Mobile-specific adjustments using Media Queries */
