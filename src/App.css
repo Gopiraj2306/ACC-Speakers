@@ -63,7 +63,7 @@
 /* For screens up to 768px (common breakpoint for tablets/large phones) */
 @media (max-width: 768px) {
   .card {
-    width: 30px; /* Even smaller default width for mobile */
+    width: 10px; /* Even smaller default width for mobile */
     height: 300px; /* Adjusted height for mobile */
     border-radius: 8px; /* Slightly smaller border-radius */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Lighter shadow */
