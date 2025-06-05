@@ -70,7 +70,7 @@
   }
 
   .card.active {
-    width: 250px; /* Reduced active width for mobile screens */
+    width: 150px; /* Reduced active width for mobile screens */
     height: 300px; /* Keep height consistent with normal card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly more prominent for active */
   }
