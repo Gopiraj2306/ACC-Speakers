@@ -84,7 +84,7 @@
 /* For even smaller screens (e.g., typical phone portrait) */
 @media (max-width: 480px) {
   .card {
-    width: 50px; /* Very small default width */
+    width: 18px; /* Very small default width */
     height: 250px; /* Further reduced height */
     border-radius: 6px;
     box-shadow: none; /* Consider removing shadow completely for very small screens */
